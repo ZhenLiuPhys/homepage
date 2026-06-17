@@ -2038,6 +2038,17 @@ body.gallery-lightbox-open {
   margin-bottom: 0.7rem;
 }
 
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.service-grid .section-block {
+  margin-top: 0;
+  height: 100%;
+}
+
 .service-list {
   margin: 0;
   padding-left: 1.12rem;
@@ -2077,6 +2088,7 @@ body.gallery-lightbox-open {
   .theme-grid { grid-template-columns: 1fr; }
   .audience-paths { grid-template-columns: 1fr; }
   .mentoring-grid { grid-template-columns: 1fr; }
+  .service-grid { grid-template-columns: 1fr; }
 }
 
 @media (prefers-reduced-motion: reduce) {

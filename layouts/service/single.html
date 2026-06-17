@@ -23,85 +23,50 @@
 
 {{ if $s.workshops }}
 <section class="container page-panel" id="service-workshops">
-  <article class="section-block service-tile">
-    {{ partial "card-header.html" (dict "eyebrow" "Organization" "title" "Program and Workshop Organizations") }}
-    <ul class="service-list">{{ range $s.workshops }}<li>{{ . }}</li>{{ end }}</ul>
-  </article>
+  {{ partial "service-tile.html" (dict "eyebrow" "Organization" "title" "Program and Workshop Organizations" "items" $s.workshops) }}
 </section>
 {{ end }}
 
 {{ if $s.conference_sessions }}
 <section class="container page-panel" id="service-conference-sessions">
-  <article class="section-block service-tile">
-    {{ partial "card-header.html" (dict "eyebrow" "Conferences" "title" "Conference and Workshop Session Organizations") }}
-    <ul class="service-list">{{ range $s.conference_sessions }}<li>{{ . }}</li>{{ end }}</ul>
-  </article>
+  {{ partial "service-tile.html" (dict "eyebrow" "Conferences" "title" "Conference and Workshop Session Organizations" "items" $s.conference_sessions) }}
 </section>
 {{ end }}
 
 {{ if $s.committee_membership }}
 <section class="container page-panel" id="service-membership">
-  <article class="section-block service-tile">
-    {{ partial "card-header.html" (dict "eyebrow" "Membership" "title" "Committee and Membership") }}
-    <ul class="service-list">{{ range $s.committee_membership }}<li>{{ . }}</li>{{ end }}</ul>
-  </article>
+  {{ partial "service-tile.html" (dict "eyebrow" "Membership" "title" "Committee and Membership" "items" $s.committee_membership) }}
 </section>
 {{ end }}
 
+{{ $compactTiles := slice }}
 {{ if $s.university_service }}
-<section class="container page-panel" id="service-umn">
-  <article class="section-block service-tile">
-    {{ partial "card-header.html" (dict "eyebrow" "UMN" "title" "Departmental and University Service") }}
-    <ul class="service-list">{{ range $s.university_service }}<li>{{ . }}</li>{{ end }}</ul>
-  </article>
-</section>
+  {{ $compactTiles = $compactTiles | append (dict "id" "service-umn" "eyebrow" "UMN" "title" "Departmental and University Service" "items" $s.university_service) }}
 {{ end }}
-
 {{ if $s.editorial_referee }}
-<section class="container page-panel" id="service-editorial">
-  <article class="section-block service-tile">
-    {{ partial "card-header.html" (dict "eyebrow" "Editorial" "title" "Journal Editorial Service") }}
-    <ul class="service-list">{{ range $s.editorial_referee }}<li>{{ . }}</li>{{ end }}</ul>
-  </article>
-</section>
+  {{ $compactTiles = $compactTiles | append (dict "id" "service-editorial" "eyebrow" "Editorial" "title" "Journal Editorial Service" "items" $s.editorial_referee) }}
 {{ end }}
-
 {{ if $s.referee_journals }}
-<section class="container page-panel" id="service-referee-journals">
-  <article class="section-block service-tile">
-    {{ partial "card-header.html" (dict "eyebrow" "Referee" "title" "Journals Refereed (Full List)") }}
-    <ul class="service-list">{{ range $s.referee_journals }}<li>{{ . }}</li>{{ end }}</ul>
-  </article>
-</section>
+  {{ $compactTiles = $compactTiles | append (dict "id" "service-referee-journals" "eyebrow" "Referee" "title" "Journals Refereed (Full List)" "items" $s.referee_journals) }}
 {{ end }}
-
 {{ if $s.referee_services }}
-<section class="container page-panel" id="service-other-reviews">
-  <article class="section-block service-tile">
-    {{ partial "card-header.html" (dict "eyebrow" "Other Reviews" "title" "Other Referee Services") }}
-    <ul class="service-list">{{ range $s.referee_services }}<li>{{ . }}</li>{{ end }}</ul>
-  </article>
-</section>
+  {{ $compactTiles = $compactTiles | append (dict "id" "service-other-reviews" "eyebrow" "Other Reviews" "title" "Other Referee Services" "items" $s.referee_services) }}
 {{ end }}
-
 {{ if $s.grant_review }}
-<section class="container page-panel" id="service-grants">
-  <article class="section-block service-tile">
-    {{ partial "card-header.html" (dict "eyebrow" "Grant Review" "title" "Grant and Proposal Review") }}
-    <ul class="service-list">{{ range $s.grant_review }}<li>{{ . }}</li>{{ end }}</ul>
-  </article>
+  {{ $compactTiles = $compactTiles | append (dict "id" "service-grants" "eyebrow" "Grant Review" "title" "Grant and Proposal Review" "items" $s.grant_review) }}
+{{ end }}
+{{ $compactTiles = $compactTiles | append (dict "id" "outreach-history" "eyebrow" "Outreach" "title" "Public Outreach" "items" (slice
+  "Guide, Muon g-2 experiment outreach (Saturday Morning Physics), Fermilab (2016-2017)"
+  "Guide, Grid Computing Center outreach, Fermilab (2016)"
+  "Guide, Magic of Light outreach, University of Pittsburgh (2014)"
+  "Leading Organizer, Physics Festivals, Zhejiang University (2005-2008)"
+)) }}
+
+{{ if gt (len $compactTiles) 0 }}
+<section class="container page-panel service-grid">
+  {{ range $compactTiles }}
+    {{ partial "service-tile.html" . }}
+  {{ end }}
 </section>
 {{ end }}
-
-<section class="container page-panel" id="outreach-history">
-  <article class="section-block service-tile">
-    {{ partial "card-header.html" (dict "eyebrow" "Outreach" "title" "Public Outreach") }}
-    <ul class="service-list">
-      <li>Guide, Muon g-2 experiment outreach (Saturday Morning Physics), Fermilab (2016-2017)</li>
-      <li>Guide, Grid Computing Center outreach, Fermilab (2016)</li>
-      <li>Guide, Magic of Light outreach, University of Pittsburgh (2014)</li>
-      <li>Leading Organizer, Physics Festivals, Zhejiang University (2005-2008)</li>
-    </ul>
-  </article>
-</section>
 {{ end }}

@@ -1,0 +1,39 @@
+# Copy to trajectory/data/recommendation_letters.yaml (gitignored) and edit there.
+# Tell your agent in chat: "Add to recommendation letters: …"
+#
+# Each calendar year in `years` counts as one letter of that type for that person.
+#
+# Plot groups (see trajectory_lib/parse_letters.py):
+#   Career — grad / postdoc / faculty / industrial / faculty promotion (each explicit)
+#   Fellowships & programs — UMN awards, fellowships, NSF, summer schools, workshops
+#   Faculty award nominations — national / international faculty prizes (rare)
+#   Immigration — visa + greencard
+
+letter_types:
+  postdoc_rl: Postdoc RL
+  faculty_rl: Faculty RL
+  grad_rl: Grad RL
+  industrial_rl: Industrial RL
+  faculty_promotion: Faculty promotion
+  umn_award_nomination: UMN award nomination
+  university_fellowship_rl: University fellowship RL
+  summer_school_rl: Summer school RL
+  nsf_fellowship_rl: NSF fellowship RL
+  nsf_reu_undergrad_rl: NSF REU undergrad RL
+  fellowship_nomination: Fellowship nomination
+  national_award_nomination: National award nomination
+  international_award_nomination: International award nomination
+  visa_letter: Visa letter
+  greencard_letter: Greencard letter
+  workshop_program: Workshop / program letter
+  prize_nomination: Prize nomination
+  other: Other
+
+people:
+  - name: Ada Example
+    entries:
+      - type: postdoc_rl
+        years: [2024, 2025]
+      - type: faculty_rl
+        years: [2025]
+        note: optional context (school, award, TASI, etc.)

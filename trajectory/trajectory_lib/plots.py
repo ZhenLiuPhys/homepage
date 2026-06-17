@@ -27,6 +27,18 @@ SERIES_ORDER = {
         "Total",
     ],
     "service": ["Chair", "Workshop organizer", "Committee", "Session convener", "Total"],
+    "letters": [
+        "Grad RL",
+        "Postdoc RL",
+        "Faculty RL",
+        "Industrial RL",
+        "Faculty promotion",
+        "Fellowships & programs",
+        "Faculty award nominations",
+        "Immigration",
+        "Other",
+        "Total",
+    ],
 }
 
 
@@ -79,6 +91,53 @@ def plot_multi_series(
 
     mode_label = "Cumulative" if cumulative_mode else "Annual"
     _style_ax(ax, years, f"{title} ({mode_label})", ylabel)
+    apply_milestones(ax, root, years[-1])
+    ax.legend(loc="upper left", bbox_to_anchor=(1.01, 1), fontsize=8, frameon=False)
+    fig.tight_layout()
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(out_path, dpi=DPI, bbox_inches="tight")
+    plt.close(fig)
+
+
+def plot_letters_annual_stacked(
+    years: list[int],
+    series: dict[str, dict[int, int]],
+    *,
+    order: list[str],
+    root: Path,
+    out_path: Path,
+) -> None:
+    grid = fill_year_grid(series, years)
+    types_order = [name for name in order if name != "Total" and name in grid]
+    if not types_order:
+        return
+
+    fig, ax = plt.subplots(figsize=FIGSIZE)
+    colors = plt.cm.tab10.colors
+    bottoms = [0] * len(years)
+
+    for idx, name in enumerate(types_order):
+        values = grid[name]
+        ax.bar(
+            years,
+            values,
+            bottom=bottoms,
+            width=0.72,
+            label=name,
+            color=colors[idx % len(colors)],
+            alpha=0.9,
+            edgecolor="white",
+            linewidth=0.4,
+        )
+        bottoms = [b + v for b, v in zip(bottoms, values)]
+
+    if "Total" in grid:
+        totals = grid["Total"]
+        for x, t in zip(years, totals):
+            if t:
+                ax.text(x, t + 0.05, str(t), ha="center", va="bottom", fontsize=7, color="#333")
+
+    _style_ax(ax, years, "Recommendation letters (Annual, by type)", "Count")
     apply_milestones(ax, root, years[-1])
     ax.legend(loc="upper left", bbox_to_anchor=(1.01, 1), fontsize=8, frameon=False)
     fig.tight_layout()

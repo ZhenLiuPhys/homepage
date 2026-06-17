@@ -1,0 +1,6 @@
+<article class="section-block service-tile"{{ with .id }} id="{{ . }}"{{ end }}>
+  {{ partial "card-header.html" (dict "eyebrow" .eyebrow "title" .title) }}
+  <ul class="service-list">
+    {{ range .items }}<li>{{ . }}</li>{{ end }}
+  </ul>
+</article>
