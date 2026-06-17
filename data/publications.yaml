@@ -664,7 +664,7 @@
   arxiv: '2306.00079'
   journal_url: ''
   section: refereed_journals
-  featured: false
+  featured: true
   journal: JHEP08(2023)173
   status: ''
   venue_display: JHEP08(2023)173

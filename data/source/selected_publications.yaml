@@ -36,6 +36,12 @@
     alt: "Dark photon exclusion limit from the Dark SRF cavity search"
     caption: |
       Exclusion region for dark photons from the superconducting RF cavity search (Dark SRF).
+- arxiv: "2306.00079"
+  title: "A Guide to Diagnosing Colored Resonances at Hadron Colliders"
+  year: 2023
+  topic: bsm
+  theme_ids: ["amplitudes-bsm"]
+  highlight_note: "Guide to distinguishing colored resonance signals and final-state topologies at hadron colliders."
 - arxiv: "2207.08448"
   title: "First constraints on Heavy QCD Axions with a Liquid Argon Time Projection Chamber using the ArgoNeuT Experiment"
   year: 2022
