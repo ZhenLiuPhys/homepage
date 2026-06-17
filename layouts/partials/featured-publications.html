@@ -1,7 +1,7 @@
 {{/* Homepage selected publications feed. All entries render; JS picks 6 at random per load, sorted by year desc. */}}
 {{ $selected := sort hugo.Data.source.selected_publications "year" "desc" }}
 {{ $pubs := hugo.Data.publications }}
-{{ $figExts := slice "png" "webp" "jpg" "jpeg" "svg" }}
+{{ $figExts := slice "gif" "png" "webp" "jpg" "jpeg" "svg" }}
 <div id="featured-pub-showcase" class="feed-list feed-list--pub-showcase">
   {{ range $entry := $selected }}
     {{ $match := where $pubs "arxiv" $entry.arxiv }}

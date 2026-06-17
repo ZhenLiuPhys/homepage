@@ -14,8 +14,17 @@
 {{ if and $status $venueLine }}
   {{ $statusInVenue = gt (len (findRE (printf "(?i)\\b%s\\b" $status) $venueLine)) 0 }}
 {{ end }}
-{{ $searchText := printf "%s %s %s %s %s %s %v %s %s" $title $pub.venue $pub.venue_display $pub.authors $pub.arxiv $pub.doi $pub.year $pub.status $pub.journal }}
 {{ $tagList := $pub.tags | default (slice) }}
+{{ $tagVocab := hugo.Data.source.publication_tag_vocab | default (slice) }}
+{{ $tagLabels := dict }}
+{{ range $tagVocab }}
+  {{ $tagLabels = merge $tagLabels (dict .id .label) }}
+{{ end }}
+{{ $tagLabelList := slice }}
+{{ range $tagList }}
+  {{ $tagLabelList = $tagLabelList | append (index $tagLabels . | default .) }}
+{{ end }}
+{{ $searchText := printf "%s %s %s %s %s %s %v %s %s %s" $title $pub.venue $pub.venue_display $pub.authors $pub.arxiv $pub.doi $pub.year $pub.status $pub.journal (delimit $tagLabelList " ") }}
 <article class="pub-row" data-search-text="{{ $searchText | lower | htmlEscape }}" data-pub-year="{{ $pub.year }}" data-pub-section="{{ $pub.section }}" data-pub-tags="{{ delimit $tagList " " }}">
   <div class="pub-row-main">
     <h3 class="pub-row-title">{{ partial "format-publication-title.html" $title }}</h3>
@@ -31,6 +40,9 @@
       {{ end }}
       {{ with $pub.arxiv }}
         · <a class="pub-inline-link pub-arxiv-id" href="https://arxiv.org/abs/{{ . }}" target="_blank" rel="noopener">arXiv:{{ . }}</a>
+      {{ end }}
+      {{ with $tagLabelList }}
+        · <span class="pub-tag-keywords">{{ delimit . ", " }}</span>
       {{ end }}
       {{ with $status }}
         {{ if not $statusInVenue }}

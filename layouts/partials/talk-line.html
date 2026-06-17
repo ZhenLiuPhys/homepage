@@ -5,7 +5,7 @@
 {{ $location := $talk.location | default "" }}
 {{ $dateLabel := $talk.date_display | default $talk.year }}
 {{ $category := $talk.category | default "other" }}
-{{ $scheduled := cond (or $talk.scheduled (eq $category "scheduled")) "true" "false" }}
+{{ $scheduled := cond (or $talk.scheduled (eq $category "scheduled") (findRE `\(scheduled\)` $title)) "true" "false" }}
 {{ $searchText := printf "%s %s %s %s %s %s %s %v %s %s" $title $talk.event $talk.event_display $venue $host $location $talk.date $talk.year $talk.talk_type $category }}
 <article class="talk-row{{ if $talk.placeholder }} talk-row--placeholder{{ end }}" data-search-text="{{ $searchText | lower | htmlEscape }}" data-talk-category="{{ $category }}" data-talk-year="{{ $talk.year }}" data-scheduled="{{ $scheduled }}">
   <div class="talk-row-main">

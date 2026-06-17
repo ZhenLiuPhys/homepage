@@ -12,7 +12,7 @@
   date_display: September 2026
   venue: New directions EXploring the Unknown beyond the Standard Model (NEXUS 2026)
   category: scheduled
-  scheduled: false
+  scheduled: true
   event_display: New directions EXploring the Unknown beyond the Standard Model (NEXUS
     2026) · Shanghai, China · September 2026
   placeholder: false
@@ -30,7 +30,7 @@
   date_display: August 2026
   venue: International Workshop on New Opportunities for Particle Physics 2026
   category: scheduled
-  scheduled: false
+  scheduled: true
   event_display: International Workshop on New Opportunities for Particle Physics
     2026 · Beijing, China · August 2026
   placeholder: false
@@ -47,7 +47,7 @@
   date_display: August 2026
   venue: Fudan Particle Physics Summer School 2026
   category: lecture
-  scheduled: false
+  scheduled: true
   event_display: Fudan Particle Physics Summer School 2026 · Shanghai, China · August
     2026
   placeholder: false
@@ -79,7 +79,7 @@
   video_url: ''
   date_display: May 2026
   venue: Pheno 2026
-  category: other
+  category: workshop
   scheduled: false
   event_display: Pheno 2026 · Pittsburgh, PA · May 2026
   placeholder: false
@@ -95,7 +95,7 @@
   video_url: ''
   date_display: May 2026
   venue: Taofest
-  category: other
+  category: workshop
   scheduled: false
   event_display: Taofest · Pittsburgh, PA · May 2026
   placeholder: false
@@ -111,7 +111,7 @@
   video_url: ''
   date_display: April 2026
   venue: ''
-  category: other
+  category: seminar
   scheduled: false
   event_display: University of Wisconsin-Madison · Madison, WI · April 2026
   placeholder: false
@@ -127,7 +127,7 @@
   video_url: ''
   date_display: April 2026
   venue: ''
-  category: other
+  category: seminar
   scheduled: false
   event_display: Fermilab · Batavia, IL · April 2026
   placeholder: false
@@ -195,11 +195,11 @@
   slides_url: https://indico.global/event/15552/contributions/137284/
   video_url: ''
   date_display: October 2025
-  venue: 'Good nus: Neutrino Physics at a Muon Collider workshop, Pitt-PACC'
+  venue: 'Good nus: Neutrino Physics at a Muon Collider workshop'
   category: workshop
   scheduled: false
-  event_display: 'Good nus: Neutrino Physics at a Muon Collider workshop, Pitt-PACC
-    · Pittsburgh, PA · October 2025'
+  event_display: 'Good nus: Neutrino Physics at a Muon Collider workshop · Pittsburgh,
+    PA · October 2025'
   placeholder: false
 - id: talk-l5-004-seeking-hidden-dynamics-across-frontiers
   title: Seeking Hidden Dynamics Across Frontiers
@@ -213,7 +213,7 @@
   video_url: ''
   date_display: October 2025
   venue: ''
-  category: other
+  category: seminar
   scheduled: false
   event_display: University of Oklahoma · Norman, OK · October 2025
   placeholder: false
@@ -337,7 +337,7 @@
   video_url: ''
   date_display: May 2025
   venue: New Theory Developments session of Pheno2025, U of Pittsburgh
-  category: other
+  category: workshop
   scheduled: false
   event_display: New Theory Developments session of Pheno2025, U of Pittsburgh · Pittsburgh,
     PA · May 2025
@@ -406,7 +406,7 @@
   video_url: ''
   date_display: October 2024
   venue: CEPC2024
-  category: other
+  category: workshop
   scheduled: false
   event_display: CEPC2024 · Hangzhou, China · October 2024
   placeholder: false
@@ -422,7 +422,7 @@
   video_url: ''
   date_display: October 2024
   venue: Higgs section CEPC2024
-  category: other
+  category: workshop
   scheduled: false
   event_display: Higgs section CEPC2024 · Hangzhou, China · October 2024
   placeholder: false
@@ -472,7 +472,7 @@
   video_url: ''
   date_display: September 2024
   venue: the HDays2024
-  category: other
+  category: workshop
   scheduled: false
   event_display: the HDays2024 · Santander, Spain · September 2024
   placeholder: false
@@ -524,7 +524,7 @@
   video_url: ''
   date_display: July 2024
   venue: CETUP*2024 program
-  category: other
+  category: workshop
   scheduled: false
   event_display: CETUP*2024 program · Lead, SD · July 2024
   placeholder: false
@@ -556,7 +556,7 @@
   video_url: ''
   date_display: May 2024
   venue: Pheno-DPF 2024
-  category: other
+  category: workshop
   scheduled: false
   event_display: Pheno-DPF 2024 · Pittsburgh, PA · May 2024
   placeholder: false
@@ -764,7 +764,7 @@
   video_url: ''
   date_display: June 2023
   venue: ''
-  category: other
+  category: workshop
   scheduled: false
   event_display: Aspen Center for Physics · June 2023
   placeholder: false
@@ -797,7 +797,7 @@
   video_url: ''
   date_display: May 2023
   venue: Beyond the SM from Colliders to Early Universe
-  category: other
+  category: seminar
   scheduled: false
   event_display: Beyond the SM from Colliders to Early Universe · Chicago, Illinois
     · May 2023
@@ -895,7 +895,7 @@
   video_url: ''
   date_display: May 2023
   venue: contributed parallel talk at Pheno 2023
-  category: other
+  category: workshop
   scheduled: false
   event_display: contributed parallel talk at Pheno 2023 · Pittsburgh, Pennsylvania
     · May 2023
@@ -912,7 +912,7 @@
   video_url: ''
   date_display: March 2023
   venue: ''
-  category: other
+  category: workshop
   scheduled: false
   event_display: the KITP muon collider program · Santa Babara, California · March
     2023
@@ -929,7 +929,7 @@
   video_url: ''
   date_display: March 2023
   venue: Moriond QCD
-  category: other
+  category: workshop
   scheduled: false
   event_display: Moriond QCD · La Thulie, Italy · March 2023
   placeholder: false
@@ -945,7 +945,7 @@
   video_url: ''
   date_display: March 2023
   venue: Winter Aspen Program, Aspen, Co
-  category: other
+  category: workshop
   scheduled: false
   event_display: Winter Aspen Program, Aspen, Co · March 2023
   placeholder: false
@@ -962,7 +962,7 @@
   video_url: ''
   date_display: February 2023
   venue: Lake Louise
-  category: other
+  category: plenary
   scheduled: false
   event_display: Lake Louise · AB, Canada · February 2023
   placeholder: false
@@ -978,7 +978,7 @@
   video_url: ''
   date_display: January 2023
   venue: the dual CP program, Colima, Mexico
-  category: other
+  category: workshop
   scheduled: false
   event_display: the dual CP program, Colima, Mexico · January 2023
   placeholder: false
@@ -994,7 +994,7 @@
   video_url: ''
   date_display: January 2023
   venue: the HK-IAS HEP program, HKUST
-  category: other
+  category: workshop
   scheduled: false
   event_display: the HK-IAS HEP program, HKUST · Hong Kong, China · January 2023
   placeholder: false
@@ -1044,7 +1044,7 @@
   video_url: ''
   date_display: December 2022
   venue: ''
-  category: other
+  category: workshop
   scheduled: false
   event_display: MEPA, China · December 2022
   placeholder: false
@@ -1115,7 +1115,7 @@
   date_display: July 2022
   venue: invited overview talk in the Energy Frontier Dark Matter parallel session,
     CSS
-  category: other
+  category: workshop
   scheduled: false
   event_display: invited overview talk in the Energy Frontier Dark Matter parallel
     session, CSS · July 2022
@@ -1132,7 +1132,7 @@
   video_url: ''
   date_display: July 2022
   venue: Higgs Potential 2022, Peking U
-  category: other
+  category: workshop
   scheduled: false
   event_display: Higgs Potential 2022, Peking U · July 2022
   placeholder: false
@@ -1169,7 +1169,7 @@
   date_display: July 2022
   venue: summary talk (representing the collective work by EF TG 08-09-10 conveners
     and editors) in the Energy Frontier parallel session, CSS
-  category: other
+  category: workshop
   scheduled: false
   event_display: summary talk (representing the collective work by EF TG 08-09-10
     conveners and editors) in the Energy Frontier parallel session, CSS · July 2022
@@ -1240,7 +1240,7 @@
   date_display: May 2022
   venue: 'invited review talk in Upgrades and Future Projects: Future experiments
     session (parallel) at 10th LHCP (LHCP2022)'
-  category: other
+  category: workshop
   scheduled: false
   event_display: 'invited review talk in Upgrades and Future Projects: Future experiments
     session (parallel) at 10th LHCP (LHCP2022) · May 2022'
@@ -1358,7 +1358,7 @@
   video_url: ''
   date_display: November 2021
   venue: invited review talk at Higgs session (parallel) of CEPC 2021
-  category: other
+  category: workshop
   scheduled: false
   event_display: invited review talk at Higgs session (parallel) of CEPC 2021 · Nanjing,
     China · November 2021
@@ -1499,7 +1499,7 @@
   video_url: ''
   date_display: May 2021
   venue: contributed contributed parallel talk Pheno 2021
-  category: other
+  category: workshop
   scheduled: false
   event_display: contributed contributed parallel talk Pheno 2021 · May 2021
   placeholder: false
@@ -1534,7 +1534,7 @@
   video_url: ''
   date_display: April 2021
   venue: invited overview talk at Optomechanics for dark matter detection - 2nd edition
-  category: other
+  category: workshop
   scheduled: false
   event_display: invited overview talk at Optomechanics for dark matter detection
     - 2nd edition · April 2021
@@ -1686,11 +1686,10 @@
   slides_url: https://indico.cern.ch/event/969815/timetable/?layout=room#58-physics-at-higgs-factories
   video_url: ''
   date_display: December 2020
-  venue: 'invited overview talk at PITT-PACC workshop: Muon Collider Physics, PITT-PACC'
+  venue: University of Pittsburgh
   category: workshop
   scheduled: false
-  event_display: 'invited overview talk at PITT-PACC workshop: Muon Collider Physics,
-    PITT-PACC · December 2020'
+  event_display: University of Pittsburgh · December 2020
   placeholder: false
 - id: talk-l6-067-summary-and-future-plans-of-working-group-3
   title: Summary and Future Plans of Working Group 3
@@ -1738,7 +1737,7 @@
   video_url: ''
   date_display: November 2020
   venue: CEPC2020
-  category: other
+  category: workshop
   scheduled: false
   event_display: CEPC2020 · November 2020
   placeholder: false
@@ -1755,7 +1754,7 @@
   video_url: ''
   date_display: October 2020
   venue: 'Energy Frontier in Particle Physics: LHC and Future Colliders'
-  category: other
+  category: workshop
   scheduled: false
   event_display: 'Energy Frontier in Particle Physics: LHC and Future Colliders ·
     October 2020'
@@ -1772,7 +1771,7 @@
   video_url: ''
   date_display: October 2020
   venue: Higgs2020
-  category: other
+  category: workshop
   scheduled: false
   event_display: Higgs2020 · October 2020
   placeholder: false
@@ -1872,7 +1871,7 @@
   video_url: ''
   date_display: May 2020
   venue: parallel talk BSM2 sessions at LHCP2020, Paris
-  category: other
+  category: workshop
   scheduled: false
   event_display: parallel talk BSM2 sessions at LHCP2020, Paris · May 2020
   placeholder: false
@@ -2060,7 +2059,7 @@
   video_url: ''
   date_display: December 2019
   venue: Physics potential for top threshold run at e+e- collider, Beijing
-  category: other
+  category: seminar
   scheduled: false
   event_display: Physics potential for top threshold run at e+e- collider, Beijing
     · December 2019
@@ -2149,7 +2148,7 @@
   video_url: ''
   date_display: November 2019
   venue: CEPC 2019
-  category: other
+  category: workshop
   scheduled: false
   event_display: CEPC 2019 · Beijing, China · November 2019
   placeholder: false
@@ -2184,7 +2183,7 @@
   video_url: ''
   date_display: October 2019
   venue: overview talk at West Coast LHC Jamboree
-  category: other
+  category: seminar
   scheduled: false
   event_display: overview talk at West Coast LHC Jamboree · Palo Alto, CA · October
     2019
@@ -2202,7 +2201,7 @@
   video_url: ''
   date_display: August 2019
   venue: 'Searching for New Physics: Leaving No Stone Unturned'
-  category: other
+  category: seminar
   scheduled: false
   event_display: 'Searching for New Physics: Leaving No Stone Unturned · Salt Lake
     City, UT · August 2019'
@@ -2308,7 +2307,7 @@
   video_url: ''
   date_display: June 2019
   venue: IFT program ``Opportunities at Future High Energy Colliders'', IFT-Madrid
-  category: other
+  category: workshop
   scheduled: false
   event_display: IFT program ``Opportunities at Future High Energy Colliders'', IFT-Madrid
     · Madrid, Spain · June 2019
@@ -2326,7 +2325,7 @@
   video_url: ''
   date_display: June 2019
   venue: IFT program ``Opportunities at Future High Energy Colliders'', IFT-Madrid
-  category: other
+  category: workshop
   scheduled: false
   event_display: IFT program ``Opportunities at Future High Energy Colliders'', IFT-Madrid
     · Madrid, Spain · June 2019
@@ -2750,7 +2749,7 @@
   video_url: ''
   date_display: June 2018
   venue: PASCOS 2018
-  category: other
+  category: workshop
   scheduled: false
   event_display: PASCOS 2018 · Cleveland, Ohio · June 2018
   placeholder: false
@@ -2820,7 +2819,7 @@
   video_url: ''
   date_display: May 2018
   venue: ''
-  category: other
+  category: workshop
   scheduled: false
   event_display: Energy frontier planning at Fermilab · Batavia, IL · May 2018
   placeholder: false
@@ -3232,7 +3231,7 @@
   video_url: ''
   date_display: January 2017
   venue: the HKIAS HEP program 2017, HKUST, Hong Kong
-  category: other
+  category: workshop
   scheduled: false
   event_display: the HKIAS HEP program 2017, HKUST, Hong Kong · January 2017
   placeholder: false
@@ -3284,7 +3283,7 @@
   date_display: December 2016
   venue: invited theory overview talk at the Higgs/EW parallel session of LCWS2016,
     Morioka
-  category: other
+  category: workshop
   scheduled: false
   event_display: invited theory overview talk at the Higgs/EW parallel session of
     LCWS2016, Morioka · Iwate, Japan · December 2016
@@ -3350,7 +3349,7 @@
   video_url: ''
   date_display: October 2016
   venue: Batavia, IL, Higgs physics opportunities at future e+e- collider
-  category: other
+  category: colloquium
   scheduled: false
   event_display: Batavia, IL, Higgs physics opportunities at future e+e- collider
     · October 2016
@@ -3367,7 +3366,7 @@
   video_url: ''
   date_display: October 2016
   venue: ''
-  category: other
+  category: seminar
   scheduled: false
   event_display: Argonne National Laboratory · Lemont, IL · October 2016
   placeholder: false
@@ -3384,7 +3383,7 @@
   video_url: ''
   date_display: October 2016
   venue: invited theory overview for the parallel session
-  category: other
+  category: workshop
   scheduled: false
   event_display: invited theory overview for the parallel session · Caltech, California
     · October 2016
@@ -3434,7 +3433,7 @@
   video_url: ''
   date_display: August 2016
   venue: ICHEP2016
-  category: other
+  category: workshop
   scheduled: false
   event_display: ICHEP2016 · Chicago, Illinois · August 2016
   placeholder: false
@@ -3518,7 +3517,7 @@
   video_url: ''
   date_display: March 2016
   venue: ''
-  category: other
+  category: seminar
   scheduled: false
   event_display: University of Wisconsin-Madison · Madison, Wisconsin · March 2016
   placeholder: false
@@ -3617,7 +3616,7 @@
   video_url: ''
   date_display: November 2015
   venue: invited young physicist lightning talk, US LUA 2015, Batavia
-  category: other
+  category: workshop
   scheduled: false
   event_display: invited young physicist lightning talk, US LUA 2015, Batavia · November
     2015
@@ -3718,7 +3717,7 @@
   video_url: ''
   date_display: August 2015
   venue: SUSY 2015
-  category: other
+  category: workshop
   scheduled: false
   event_display: SUSY 2015 · Lake Tahoe, California · August 2015
   placeholder: false
@@ -3784,7 +3783,7 @@
   video_url: ''
   date_display: July 2015
   venue: LPC Tau HATS (Tau Hands-on Tutorial Sessions)
-  category: other
+  category: workshop
   scheduled: false
   event_display: LPC Tau HATS (Tau Hands-on Tutorial Sessions) · Fermilab, Illinois
     · July 2015
@@ -3868,7 +3867,7 @@
   video_url: ''
   date_display: March 2015
   venue: ''
-  category: other
+  category: seminar
   scheduled: false
   event_display: Institute of High Energy Physics (IHEP) · Beijing, China · March
     2015
@@ -3885,7 +3884,7 @@
   video_url: ''
   date_display: February 2015
   venue: ''
-  category: other
+  category: seminar
   scheduled: false
   event_display: Michigan State University · East Lansing, Michigan · February 2015
   placeholder: false
@@ -3902,7 +3901,7 @@
   video_url: ''
   date_display: November 2014
   venue: ''
-  category: other
+  category: seminar
   scheduled: false
   event_display: Argonne National Laboratory · Lemont, Illinois · November 2014
   placeholder: false
@@ -3919,7 +3918,7 @@
   video_url: ''
   date_display: September 2014
   venue: ''
-  category: other
+  category: seminar
   scheduled: false
   event_display: Brookhaven National Laboratory · Upton, New York · September 2014
   placeholder: false
@@ -3992,7 +3991,7 @@
   video_url: ''
   date_display: July 2014
   venue: SUSY 2014
-  category: other
+  category: workshop
   scheduled: false
   event_display: SUSY 2014 · Manchester, UK · July 2014
   placeholder: false
@@ -4095,7 +4094,7 @@
   video_url: ''
   date_display: September 2013
   venue: ''
-  category: other
+  category: seminar
   scheduled: false
   event_display: Zhejiang University · Hangzhou, China · September 2013
   placeholder: false
@@ -4144,7 +4143,7 @@
   video_url: ''
   date_display: June 2013
   venue: Washington ·
-  category: other
+  category: seminar
   scheduled: false
   event_display: Washington · · UW-Seattle, Washington · June 2013
   placeholder: false
@@ -4176,7 +4175,7 @@
   video_url: ''
   date_display: May 2013
   venue: 'Dark Matter: from Space to Supercolliders'
-  category: other
+  category: workshop
   scheduled: false
   event_display: 'Dark Matter: from Space to Supercolliders · OSU, Ohio · May 2013'
   placeholder: false
@@ -4242,7 +4241,7 @@
   video_url: ''
   date_display: March 2013
   venue: ''
-  category: other
+  category: seminar
   scheduled: false
   event_display: Brookhaven National Laboratory · New York · March 2013
   placeholder: false
@@ -4292,7 +4291,7 @@
   video_url: ''
   date_display: November 2012
   venue: remote talk at Muon Collider Physics and Detector
-  category: other
+  category: seminar
   scheduled: false
   event_display: remote talk at Muon Collider Physics and Detector · Fermilab, Illinois
     · November 2012
@@ -4319,17 +4318,16 @@
   date: '2012-10-01'
   event: talk at, PITT-PACC Workshop--The Higgs Boson and the Next Discovery , Pittsburgh,
     Pennsylvania, Oct.2012
-  host: ''
+  host: PITT-PACC Workshop--The Higgs Boson and the Next Discovery
   location: Pittsburgh, Pennsylvania
   talk_type: talk
   slides_url: ''
   video_url: ''
   date_display: October 2012
-  venue: talk at, PITT-PACC Workshop--The Higgs Boson and the Next Discovery
+  venue: talk at
   category: workshop
   scheduled: false
-  event_display: talk at, PITT-PACC Workshop--The Higgs Boson and the Next Discovery
-    · Pittsburgh, Pennsylvania · October 2012
+  event_display: talk at · Pittsburgh, Pennsylvania · October 2012
   placeholder: false
 - id: talk-l6-162-lhc-implications-for-the-nmssm
   title: LHC Implications for the NMSSM
@@ -4399,7 +4397,7 @@
   video_url: ''
   date_display: March 2012
   venue: Buenos Aires, Argentina
-  category: other
+  category: seminar
   scheduled: false
   event_display: Buenos Aires, Argentina · March 2012
   placeholder: false
@@ -4415,7 +4413,7 @@
   video_url: ''
   date_display: December 2011
   venue: ''
-  category: other
+  category: seminar
   scheduled: false
   event_display: Zhejiang University · Hangzhou, China · December 2011
   placeholder: false
@@ -4424,14 +4422,14 @@
   year: 2011
   date: '2011-12-01'
   event: PITT-PACC, Pittsburgh, Pennsylvania, Dec.2011
-  host: ''
+  host: PITT-PACC
   location: Pittsburgh, Pennsylvania
   talk_type: talk
   slides_url: ''
   video_url: ''
   date_display: December 2011
-  venue: PITT-PACC
-  category: other
+  venue: ''
+  category: seminar
   scheduled: false
   event_display: PITT-PACC · Pittsburgh, Pennsylvania · December 2011
   placeholder: false
@@ -4485,7 +4483,7 @@
   video_url: ''
   date_display: June 2011
   venue: ''
-  category: other
+  category: seminar
   scheduled: false
   event_display: student talk at Theoretical Advanced Studies Institute in Elementary
     Particle Physics 2011 (TASI2011) · Boulder, Colorado · June 2011

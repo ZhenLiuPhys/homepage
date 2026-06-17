@@ -1705,6 +1705,11 @@ body.gallery-lightbox-open {
   color: var(--muted);
 }
 
+.pub-tag-keywords {
+  color: var(--muted);
+  font-size: 0.92em;
+}
+
 .pub-status {
   font-style: italic;
   color: var(--muted);

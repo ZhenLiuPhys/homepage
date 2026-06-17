@@ -1,7 +1,7 @@
 # Selected publications (reverse chronological, newest first). Homepage showcase via
 # layouts/partials/featured-publications.html (year, linked title, arXiv, journal).
 # topic, theme_ids, and highlight_note are curation metadata for /publications/ cards.
-# Homepage figures: drop static/images/plots/{arxiv}.png (or .webp/.jpg/.svg); optional
+# Homepage figures: drop static/images/plots/{arxiv}.gif (preferred) or .png/.webp/.jpg/.svg; optional
 # figure: block below for caption and alt only.
 - arxiv: "2604.14284"
   title: "A Busy Higgs Signal"

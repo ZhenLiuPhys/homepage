@@ -159,6 +159,7 @@ INSTITUTION_HINTS = (
     "college",
     "school of",
     "department",
+    "pacc",
     "center for",
     "centre for",
 )
@@ -346,6 +347,40 @@ def infer_talk_type(text: str) -> str:
     return "talk"
 
 
+WORKSHOP_HINTS = (
+    "workshop",
+    "conference",
+    "symposium",
+    "meeting",
+    "forum",
+    "snowmass",
+    "school",
+    "pheno",
+    "moriond",
+    "aspen",
+    "taofest",
+    "dpf",
+    "parallel talk",
+    "winter institute",
+    "program",
+    "festival",
+    "cetup",
+    "pascos",
+    "susy ",
+    "cepc20",
+    "hdays",
+    "h days",
+    "fpc ",
+    "lpc ",
+    "energy frontier",
+    "lightning talk",
+    "mepa",
+    "supercollider",
+    "lhcp",
+    "lcws",
+)
+
+
 def infer_talk_category(combined: str, title: str, venue: str, host: str) -> str:
     text = " ".join(
         part for part in (combined, title, venue, host) if part
@@ -354,25 +389,24 @@ def infer_talk_category(combined: str, title: str, venue: str, host: str) -> str
         return "lecture"
     if "(scheduled)" in text or re.search(r"\bscheduled\b", text):
         return "scheduled"
-    if "plenary" in text:
+    if "plenary" in text or "keynote" in text:
         return "plenary"
-    if "colloquium" in text:
+    if "colloquium" in text or "coffee hour" in text:
         return "colloquium"
     if "seminar" in text:
         return "seminar"
-    if any(
-        k in text
-        for k in (
-            "workshop",
-            "conference",
-            "symposium",
-            "meeting",
-            "forum",
-            "snowmass",
-            "school",
-        )
+    if any(k in text for k in WORKSHOP_HINTS):
+        return "workshop"
+    if re.search(
+        r"\binvited\s+(?:(?:review|overview|theory\s+overview)\s+)?talk\s+(?:at|in)\b",
+        text,
     ):
         return "workshop"
+    if is_institution(venue) or is_institution(host):
+        return "seminar"
+    lead = combined.split(",")[0].strip() if combined else ""
+    if lead and is_institution(lead):
+        return "seminar"
     return "other"
 
 
@@ -430,7 +464,8 @@ def parse_talk_fields(talk: dict) -> dict:
     talk["location"] = location
     talk["talk_type"] = infer_talk_type(combined)
     talk["category"] = infer_talk_category(combined, title, venue, institution)
-    talk["scheduled"] = bool(re.search(r"\(scheduled\)|\bscheduled\b", combined, re.I))
+    sched_blob = f"{title} {combined}"
+    talk["scheduled"] = bool(re.search(r"\(scheduled\)|\bscheduled\b", sched_blob, re.I))
 
     # Compact line for templates / search
     bits: list[str] = []
