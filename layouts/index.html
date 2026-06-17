@@ -59,7 +59,7 @@
 <section class="bento-section">
   <div class="container bento-grid">
     <article class="bento-card bento-span-6">
-      {{ partial "card-header.html" (dict "eyebrow" "Publications" "title" .Site.Params.highlightTitle "href" (partial "rel-internal.html" (dict "href" "/publications/"))) }}
+      {{ partial "card-header.html" (dict "eyebrow" "Publications" "title" .Site.Params.highlightTitle "href" (partial "rel-internal.html" (dict "href" "/publications/")) "refreshId" "featured-pub-refresh" "refreshLabel" "Refresh" "refreshAriaLabel" "Show new random selected publications") }}
       <p class="small">A randomized showcase of six highlighted works; one figure may appear per refresh. The full bibliography is on the publications page.</p>
       {{ partial "featured-publications.html" . }}
     </article>

@@ -52,6 +52,7 @@
   venue_display: P.R. Li, Z. Liu, M. Pospelov, submitted
   tags:
   - standard-model
+  - bsm
   - lhc
 - id: pub-l1-003-a-busy-higgs-signal
   title: A Busy Higgs Signal
@@ -678,6 +679,7 @@
   - dark-sector
   - axions
   - long-lived-particles
+  - beamdump
 - id: pub-l1-023-heavy-neutral-leptons-from-stopped-muons-and-pions
   title: Heavy Neutral Leptons from Stopped Muons and Pions
   year: 2023
@@ -695,7 +697,8 @@
   venue_display: JHEP08(2023)169
   tags:
   - bsm
-  - lhc
+  - long-lived-particles
+  - beamdump
 - id: pub-l1-024-a-guide-to-diagnosing-colored-resonances-at-hadron-colliders
   title: A Guide to Diagnosing Colored Resonances at Hadron Colliders
   year: 2023
@@ -859,7 +862,8 @@
   venue_display: JHEP 02 (2023) 135
   tags:
   - bsm
-  - lhc
+  - long-lived-particles
+  - beamdump
 - id: pub-l3-016-tf07-snowmass-report-theory-of-collider-phenomena
   title: 'TF07 Snowmass Report: Theory of Collider Phenomena'
   year: 2022

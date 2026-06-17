@@ -447,7 +447,8 @@
 '2211.00664':
   tags:
   - bsm
-  - lhc
+  - long-lived-particles
+  - beamdump
 '2211.11084':
   tags:
   - bsm
@@ -483,7 +484,8 @@
 '2306.07315':
   tags:
   - bsm
-  - lhc
+  - long-lived-particles
+  - beamdump
 '2308.06323':
   tags:
   - bsm
@@ -493,6 +495,7 @@
   - dark-sector
   - axions
   - long-lived-particles
+  - beamdump
 '2310.18398':
   tags:
   - dark-sector
@@ -639,6 +642,7 @@
 '2604.13156':
   tags:
   - standard-model
+  - bsm
   - lhc
 '2604.14284':
   tags:

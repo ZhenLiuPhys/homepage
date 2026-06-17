@@ -1,12 +1,22 @@
 {{ $eyebrow := .eyebrow }}
 {{ $title := .title }}
 {{ $href := .href }}
+{{ $refreshId := .refreshId }}
+{{ $refreshLabel := .refreshLabel | default "Refresh" }}
+{{ $refreshAria := .refreshAriaLabel | default $refreshLabel }}
 <header class="card-header">
   <div>
     {{ with $eyebrow }}<p class="section-eyebrow">{{ . }}</p>{{ end }}
     <h2>{{ $title }}</h2>
   </div>
-  {{ with $href }}
-    <a class="card-header-link" href="{{ . }}">View all</a>
+  {{ if or $href $refreshId }}
+    <div class="card-header-actions">
+      {{ with $refreshId }}
+        <button type="button" class="card-header-refresh" id="{{ . }}" aria-label="{{ $refreshAria }}">{{ $refreshLabel }}</button>
+      {{ end }}
+      {{ with $href }}
+        <a class="card-header-link" href="{{ . }}">View all</a>
+      {{ end }}
+    </div>
   {{ end }}
 </header>

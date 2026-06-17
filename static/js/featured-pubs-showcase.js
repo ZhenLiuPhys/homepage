@@ -87,21 +87,33 @@
     document.body.classList.remove("gallery-lightbox-open");
   }
 
-  var picked = pickShowcaseItems(items);
+  function applyShowcase() {
+    closeLightbox();
 
-  items.forEach(function (el) {
-    el.hidden = true;
-  });
+    items.forEach(function (el) {
+      setFigureOpen(el, false);
+      el.hidden = true;
+    });
 
-  picked.forEach(function (el) {
-    el.hidden = false;
-    list.appendChild(el);
-  });
+    var picked = pickShowcaseItems(items);
 
-  var visibleWithFigure = picked.filter(hasFigure);
-  if (visibleWithFigure.length) {
-    var autoItem = visibleWithFigure[Math.floor(Math.random() * visibleWithFigure.length)];
-    setFigureOpen(autoItem, true);
+    picked.forEach(function (el) {
+      el.hidden = false;
+      list.appendChild(el);
+    });
+
+    var visibleWithFigure = picked.filter(hasFigure);
+    if (visibleWithFigure.length) {
+      var autoItem = visibleWithFigure[Math.floor(Math.random() * visibleWithFigure.length)];
+      setFigureOpen(autoItem, true);
+    }
+  }
+
+  applyShowcase();
+
+  var refreshBtn = document.getElementById("featured-pub-refresh");
+  if (refreshBtn) {
+    refreshBtn.addEventListener("click", applyShowcase);
   }
 
   list.addEventListener("click", function (e) {
