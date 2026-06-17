@@ -42,12 +42,24 @@
   topic: axions
   theme_ids: ["dark-sector"]
   highlight_note: "First heavy QCD axion limits with ArgoNeuT liquid-argon TPC data."
+- arxiv: "2104.00638"
+  title: "A New Approach to Electroweak Symmetry Non-Restoration"
+  year: 2021
+  topic: bsm
+  theme_ids: ["amplitudes-bsm"]
+  highlight_note: "Electroweak symmetry non-restoration in a new effective-theory framework."
 - arxiv: "2009.11287"
   title: "WIMPs at High Energy Muon Colliders"
   year: 2020
   topic: dark_sector
   theme_ids: ["muon-colliders", "dark-sector"]
   highlight_note: "WIMP phenomenology at high-energy muon colliders."
+- arxiv: "1911.12364"
+  title: "The High Quality QCD Axion and the LHC"
+  year: 2019
+  topic: axions
+  theme_ids: ["dark-sector"]
+  highlight_note: "High-quality QCD axion signatures and LHC discovery prospects."
 - arxiv: "1911.07996"
   title: "Improved Limits on Millicharged Particles Using the ArgoNeuT Experiment at Fermilab"
   year: 2019
@@ -88,6 +100,12 @@
   topic: bsm
   theme_ids: ["amplitudes-bsm"]
   highlight_note: "Heavy scalar searches in tt̄ at the LHC: challenges and opportunities."
+- arxiv: "1506.06736"
+  title: "A W^ boson near 2 TeV: predictions for Run 2 of the LHC"
+  year: 2015
+  topic: bsm
+  theme_ids: ["amplitudes-bsm"]
+  highlight_note: "Heavy W′ boson near 2 TeV and Run 2 LHC discovery prospects."
 - arxiv: "1503.05923"
   title: "The Fate of Long-Lived Superparticles with Hadronic Decays after LHC Run 1"
   year: 2015
@@ -106,6 +124,18 @@
   topic: higgs
   theme_ids: ["muon-colliders"]
   highlight_note: "Precision projections for Higgs couplings and total width at the ILC."
+- arxiv: "1303.3040"
+  title: "Dark Matter and Higgs Bosons in the MSSM"
+  year: 2013
+  topic: higgs
+  theme_ids: ["dark-sector", "amplitudes-bsm"]
+  highlight_note: "Interplay of MSSM Higgs bosons and dark matter across collider and direct-detection probes."
+- arxiv: "1210.7803"
+  title: "Potential precision of a direct measurement of the Higgs boson total width at a muon collider"
+  year: 2012
+  topic: higgs
+  theme_ids: ["muon-colliders"]
+  highlight_note: "Direct Higgs total-width measurement reach at a muon collider."
 - arxiv: "1010.4309"
   title: "Colored Resonant Signals at the LHC: Largest Rate and Simplest Topology"
   year: 2010

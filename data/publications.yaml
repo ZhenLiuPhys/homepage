@@ -1356,7 +1356,7 @@
   arxiv: '2104.00638'
   journal_url: https://journals.aps.org/prd/abstract/10.1103/PhysRevD.104.055016
   section: refereed_journals
-  featured: false
+  featured: true
   journal: Phys.Rev.D 104 (2021) 5, 055016
   status: ''
   venue_display: Phys.Rev.D 104 (2021) 5, 055016
@@ -1533,7 +1533,7 @@
   arxiv: '1911.12364'
   journal_url: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.124.221801
   section: refereed_journals
-  featured: false
+  featured: true
   journal: Phys.Rev.Lett. 124, 221801
   status: ''
   venue_display: Phys.Rev.Lett. 124, 221801
@@ -2155,7 +2155,7 @@
   arxiv: '1506.06736'
   journal_url: ''
   section: refereed_journals
-  featured: false
+  featured: true
   journal: Phys.Rev.Lett. 115, 211802
   status: ''
   venue_display: Phys.Rev.Lett. 115, 211802
@@ -2418,7 +2418,7 @@
   arxiv: '1303.3040'
   journal_url: http://link.springer.com/article/10.1007\%2FJHEP11\%282013\%29008
   section: refereed_journals
-  featured: false
+  featured: true
   journal: JHEP 1311 (2013) 008
   status: ''
   venue_display: JHEP 1311 (2013) 008
@@ -2437,7 +2437,7 @@
   arxiv: '1210.7803'
   journal_url: http://journals.aps.org/prd/abstract/10.1103/PhysRevD.87.033007
   section: refereed_journals
-  featured: false
+  featured: true
   journal: Phys.Rev. D87 (2013) 033007
   status: ''
   venue_display: Phys.Rev. D87 (2013) 033007
