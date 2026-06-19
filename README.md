@@ -94,6 +94,7 @@ If the parser reports conflicts with hand-edited YAML, review `backups/cv-confli
 |------|---------|
 | Name, email, links | `data/source/profile.yaml` |
 | Homepage publication cards | `data/source/selected_publications.yaml` |
+| Homepage publication plot GIFs | `static/images/plots/{arxiv}.gif` (one file per arXiv ID in selected list) |
 | Publication topic filters | `data/source/publication_tags.yaml` (confirmed); provisional drafts in `backups/` |
 | Selected talks | `data/source/selected_talks.yaml` |
 | News feed | `data/news.yaml` |
